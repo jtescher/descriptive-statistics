@@ -29,6 +29,14 @@ stats.median #=> 2
 stats.mode #=> 1
 ```
 
+### Dispersion:
+```ruby
+stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats.range #=> 9
+stats.percentile_from_value(10) #=> 80
+stats.value_from_percentile(60) #=> 3
+```
+
 ### Spread:
 ```ruby
 stats = DescriptiveStatistics.new([1,1,2,3,10])

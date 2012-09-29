@@ -32,15 +32,5 @@ class DescriptiveStatistics
         top_2.first.first # Most frequent is mode.
       end
     end
-
-    def sample_variance
-      sum = self.inject(0) {|accumulator, value| accumulator + (value - mean) ** 2 }
-      sum / (length.to_f - 1)
-    end
-
-    def standard_deviation
-      return if length < 2
-      Math.sqrt(sample_variance)
-    end
   end
 end

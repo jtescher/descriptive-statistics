@@ -29,6 +29,13 @@ stats.median #=> 2
 stats.mode #=> 1
 ```
 
+### Spread:
+```ruby
+stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats.variance #=> 14.299999999999999
+stats.standard_deviation #=> 3.7815340802378072
+```
+
 ## Contributing
 
 1. Fork it

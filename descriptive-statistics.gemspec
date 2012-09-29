@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Descriptive Statistics Calculator}
   gem.summary       = %q{Simply calculate measures of central tendency (e.g. mean, median mode), dispersion (e.g. range
                           and quartiles), and spread (e.g variance and standard deviation)}
-  gem.homepage      = "https://github.com/jtescher/descriptive-stats"
+  gem.homepage      = "https://github.com/jtescher/descriptive-statistics"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

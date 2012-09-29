@@ -44,6 +44,12 @@ stats.variance #=> 14.299999999999999
 stats.standard_deviation #=> 3.7815340802378072
 ```
 
+### Other Measures:
+```ruby
+stats = DescriptiveStatistics.new([1,1,2,3,10]).skewness #=> 1.188328915820243
+stats = DescriptiveStatistics.new([1,1,2,3,10]).kurtosis #=> 2.405613966453127
+```
+
 ## Contributing
 
 1. Fork it

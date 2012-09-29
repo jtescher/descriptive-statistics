@@ -1,7 +1,7 @@
 # DescriptiveStatistics
 
-This gem calculates measures of central tendency (e.g. mean, median mode), dispersion (e.g. range, and quartiles), and
-spread (e.g variance and standard deviation)
+This gem calculates descriptive statistics including measures of central tendency (e.g. mean, median mode), dispersion
+(e.g. range, and quartiles), and spread (e.g variance and standard deviation).
 
 [![Build Status](https://secure.travis-ci.org/jtescher/descriptive-statistics.png)]
 (http://travis-ci.org/jtescher/descriptive-statistics)

@@ -9,8 +9,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Julian Tescher"]
   gem.email         = ["virulent@gmail.com"]
   gem.description   = %q{Descriptive Statistics Calculator}
-  gem.summary       = %q{Simply calculate measures of central tendency (e.g. mean, median mode), dispersion (e.g. range
-                          and quartiles), and spread (e.g variance and standard deviation)}
+  gem.summary       = %q{Simply calculate descriptive statistics such as measures of central tendency (e.g. mean,median,
+                         mode), dispersion (e.g. range and quartiles), and spread (e.g variance and standard deviation)}
   gem.homepage      = "https://github.com/jtescher/descriptive-statistics"
 
   gem.files         = `git ls-files`.split($/)

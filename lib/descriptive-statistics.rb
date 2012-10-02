@@ -15,5 +15,5 @@ class DescriptiveStatistics
     @data = data
   end
 
-  def_delegators :@data, :length, :inject, :sort, :each, :each_with_object
+  def_delegators :@data, :length, :inject, :sort, :each, :each_with_object, :min, :max
 end

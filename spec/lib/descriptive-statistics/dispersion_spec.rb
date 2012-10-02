@@ -11,6 +11,26 @@ describe DescriptiveStatistics::Dispersion do
     end
   end
 
+  describe '#min' do
+    it 'delegates to array' do
+      DescriptiveStatistics.new([1,2,6]).min.should == 1
+    end
+
+    it 'returns nil if empty' do
+      DescriptiveStatistics.new([]).min.should be_nil
+    end
+  end
+
+  describe '#max' do
+    it 'delegates to array' do
+      DescriptiveStatistics.new([1,2,6]).max.should == 6
+    end
+
+    it 'returns nil if empty' do
+      DescriptiveStatistics.new([]).max.should be_nil
+    end
+  end
+
   describe '#percentile_from_value' do
     it 'returns the precise percentile of each value' do
       data = [95.1772, 95.1567, 95.1937, 95.1959, 95.1442, 95.061, 95.1591, 95.1195,95.1065, 95.0925, 95.199, 95.1682]

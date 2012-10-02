@@ -33,6 +33,8 @@ stats.mode #=> 1
 ```ruby
 stats = DescriptiveStatistics.new([1,1,2,3,10])
 stats.range #=> 9
+stats.min #=> 1
+stats.range #=> 10
 stats.percentile_from_value(10) #=> 80
 stats.value_from_percentile(60) #=> 3
 ```

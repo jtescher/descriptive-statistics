@@ -15,5 +15,5 @@ class DescriptiveStatistics
     @data = data
   end
 
-  def_delegators :@data, :length, :inject, :sort, :each, :each_with_object, :min, :max
+  def_delegators :@data, *(Array.instance_methods - [:object_id, :__send__])
 end

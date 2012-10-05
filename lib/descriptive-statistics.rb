@@ -1,10 +1,10 @@
 require 'forwardable'
 require "descriptive-statistics/version"
-require 'descriptive-statistics/all'
+require 'descriptive-statistics/all-methods'
 
 class DescriptiveStatistics
   extend Forwardable
-  include DescriptiveStatistics::All
+  include DescriptiveStatistics::AllMethods
 
   def initialize(data)
     @data = data

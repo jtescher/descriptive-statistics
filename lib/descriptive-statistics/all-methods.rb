@@ -4,7 +4,7 @@ require 'descriptive-statistics/spread'
 require 'descriptive-statistics/shape'
 
 class DescriptiveStatistics
-  module All
+  module AllMethods
     include CentralTendency
     include Dispersion
     include Shape

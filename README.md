@@ -5,6 +5,7 @@ This gem calculates descriptive statistics including measures of central tendenc
 
 [![Build Status](https://secure.travis-ci.org/jtescher/descriptive-statistics.png)]
 (http://travis-ci.org/jtescher/descriptive-statistics)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/jtescher/descriptive-statistics)
 ## Installation
 
 Add this line to your application's Gemfile:

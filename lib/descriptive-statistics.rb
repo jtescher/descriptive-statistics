@@ -1,3 +1,4 @@
+require 'forwardable'
 require "descriptive-statistics/version"
 require 'descriptive-statistics/central-tendency'
 require 'descriptive-statistics/dispersion'

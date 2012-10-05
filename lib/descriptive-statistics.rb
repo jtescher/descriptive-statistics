@@ -1,16 +1,10 @@
 require 'forwardable'
 require "descriptive-statistics/version"
-require 'descriptive-statistics/central-tendency'
-require 'descriptive-statistics/dispersion'
-require 'descriptive-statistics/spread'
-require 'descriptive-statistics/shape'
+require 'descriptive-statistics/all'
 
 class DescriptiveStatistics
   extend Forwardable
-  include CentralTendency
-  include Dispersion
-  include Spread
-  include Shape
+  include DescriptiveStatistics::All
 
   def initialize(data)
     @data = data

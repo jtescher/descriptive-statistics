@@ -53,6 +53,29 @@ stats.skewness #=> 1.188328915820243
 stats.kurtosis #=> 2.405613966453127
 ```
 
+## Alternative Usage (Not suggested)
+If you want to monkey patch descriptive statistics methods into Enumerable, you can use the following:
+
+(e.g. config/initializers/descriptive_statistics_monkey_patch.rb)
+```ruby
+require 'descriptive-statistics'
+
+module Enumerable
+  include DescriptiveStatistics::All
+
+  # Warning: hacky evil meta programming. Required because classes that have already included
+  # Enumerable will not otherwise inherit the statistics methods.
+  DescriptiveStatistics::All.instance_methods.each do |m|
+    define_method(m, DescriptiveStatistics::All.instance_method(m))
+  end
+end
+```
+
+Then you can use these methods directly on Arrays:
+```ruby
+[1,1,2,3,10].mean #=> 3.4
+```
+
 ## Contributing
 
 1. Fork it

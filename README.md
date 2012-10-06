@@ -3,6 +3,9 @@
 This gem calculates descriptive statistics including measures of central tendency (e.g. mean, median mode), dispersion
 (e.g. range, and quartiles), and spread (e.g variance and standard deviation).
 
+Tested against ruby 1.8.7, 1.9.2, 1.9.3, ruby-head, jruby-18mode, jruby-19mode, jruby-head, rbx-18mode, rbx-19mode, and
+ree
+
 [![Build Status](https://secure.travis-ci.org/jtescher/descriptive-statistics.png)]
 (http://travis-ci.org/jtescher/descriptive-statistics)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/jtescher/descriptive-statistics)

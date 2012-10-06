@@ -22,7 +22,7 @@ class DescriptiveStatistics
 
     def mode
       return if length < 1
-      frequency_distribution = each_with_object(Hash.new(0)) { |value, hash| hash[value] += 1 }
+      frequency_distribution = inject(Hash.new(0)) { |hash, value| hash[value] += 1; hash }
       top_2 = frequency_distribution.sort { |a,b| b[1] <=> a[1] } .take(2)
       if top_2.length == 1
         top_2.first.first # Only one value in distribution, so it's the mode.

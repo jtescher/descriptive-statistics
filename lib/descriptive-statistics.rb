@@ -10,5 +10,5 @@ class DescriptiveStatistics
     @data = data
   end
 
-  def_delegators :@data, *(Array.instance_methods - [:object_id, :__send__])
+  def_delegators :@data, *(Array.instance_methods - [:object_id, :__id__, :__send__, 'object_id', '__id__', '__send__'])
 end

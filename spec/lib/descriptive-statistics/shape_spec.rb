@@ -25,7 +25,7 @@ describe DescriptiveStatistics::Shape do
     end
 
     it 'returns the measure of skewness of the data as high when skewed' do
-      DescriptiveStatistics.new([50,10,1,1,1]).kurtosis.should == 2.45740139974872
+      DescriptiveStatistics.new([99,10,1,1,1]).kurtosis.should == 2.56586117539186
     end
 
     it 'returns 0 if only one element' do

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe DescriptiveStatistics do
   it 'should allow hacky monkey patches to add methods to structures like arrays' do
-    if RUBY_VERSION == '1.9.3' # Ignore older versions of ruby
+    if RUBY_VERSION == '1.9.3' and RUBY_ENGINE == 'ruby' # Ignore older versions of ruby and Rubinius
       module Enumerable
         include DescriptiveStatistics::AllMethods
 
@@ -12,7 +12,7 @@ describe DescriptiveStatistics do
         end
       end
 
-      [1,2,3].mean.to_i.should == 2
+      [1,2,3].mean.should == 2
     end
   end
 end

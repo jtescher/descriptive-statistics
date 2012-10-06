@@ -12,7 +12,7 @@ describe DescriptiveStatistics do
         end
       end
 
-      [1,2,3].mean.should == 2
+      [1,2,3].mean.to_i.should == 2
     end
   end
 end

@@ -1,7 +1,11 @@
 class DescriptiveStatistics
   module CentralTendency
-    def sum
-      inject(0, :+)
+    def sum(identity = 0, &block)
+      if block_given?
+        map(&block).sum(identity)
+      else
+        inject(:+) || identity
+      end
     end
 
     def mean

@@ -7,7 +7,7 @@ describe DescriptiveStatistics do
         include DescriptiveStatistics::AllMethods
 
         # Warning: hacky evil meta programming. Required to have classes that include array get the methods too.
-        DescriptiveStatistics::AllMethods.instance_methods.each do |m|
+        DescriptiveStatistics.instance_methods.each do |m|
           define_method(m, DescriptiveStatistics::AllMethods.instance_method(m))
         end
       end

@@ -5,7 +5,7 @@ require 'descriptive-statistics/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "descriptive-statistics"
-  gem.version       = Descriptive::Statistics::VERSION
+  gem.version       = DescriptiveStatistics::VERSION
   gem.authors       = ["Julian Tescher"]
   gem.email         = ["virulent@gmail.com"]
   gem.description   = %q{Descriptive Statistics Calculator}

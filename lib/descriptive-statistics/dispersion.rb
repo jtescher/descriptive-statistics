@@ -1,4 +1,4 @@
-class DescriptiveStatistics
+module DescriptiveStatistics
   module Dispersion
     def range
       return if length < 1

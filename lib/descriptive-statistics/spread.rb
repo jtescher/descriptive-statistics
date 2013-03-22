@@ -1,4 +1,4 @@
-class DescriptiveStatistics
+module DescriptiveStatistics
   module Spread
     def variance
       return if length < 1

@@ -1,4 +1,4 @@
-class DescriptiveStatistics
+module DescriptiveStatistics
   module Shape
 
     def skewness

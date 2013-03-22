@@ -1,7 +1,7 @@
 require "descriptive-statistics/version"
-require "descriptive-statistics/delegator"
 require "descriptive-statistics/all-methods"
+require "descriptive-statistics/stats"
 
-class DescriptiveStatistics
-  include DescriptiveStatistics::AllMethods
+module DescriptiveStatistics
+  include AllMethods
 end

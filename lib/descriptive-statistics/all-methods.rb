@@ -3,7 +3,7 @@ require 'descriptive-statistics/dispersion'
 require 'descriptive-statistics/spread'
 require 'descriptive-statistics/shape'
 
-class DescriptiveStatistics
+module DescriptiveStatistics
   module AllMethods
     include CentralTendency
     include Dispersion

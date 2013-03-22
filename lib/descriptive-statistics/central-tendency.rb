@@ -1,4 +1,4 @@
-class DescriptiveStatistics
+module DescriptiveStatistics
   module CentralTendency
     def sum(identity = 0, &block)
       if block_given?

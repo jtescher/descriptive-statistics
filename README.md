@@ -66,7 +66,7 @@ If you want to monkey patch descriptive statistics methods into Enumerable, you 
 require 'descriptive-statistics'
 
 module Enumerable
-  include DescriptiveStatistics::AllMethods
+  include DescriptiveStatistics
 
   # Warning: hacky evil meta programming. Required because classes that have already included
   # Enumerable will not otherwise inherit the statistics methods.

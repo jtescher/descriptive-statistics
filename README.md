@@ -28,7 +28,7 @@ Or install it yourself as:
 
 ### Central Tendency:
 ```ruby
-stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.mean #=> 3.4
 stats.median #=> 2
 stats.mode #=> 1
@@ -36,7 +36,7 @@ stats.mode #=> 1
 
 ### Dispersion:
 ```ruby
-stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.range #=> 9
 stats.min #=> 1
 stats.max #=> 10
@@ -46,14 +46,14 @@ stats.value_from_percentile(60) #=> 3
 
 ### Spread:
 ```ruby
-stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.variance #=> 14.299999999999999
 stats.standard_deviation #=> 3.7815340802378072
 ```
 
 ### Other Measures:
 ```ruby
-stats = DescriptiveStatistics.new([1,1,2,3,10])
+stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.skewness #=> 1.188328915820243
 stats.kurtosis #=> 2.405613966453127
 ```
@@ -70,7 +70,7 @@ module Enumerable
 
   # Warning: hacky evil meta programming. Required because classes that have already included
   # Enumerable will not otherwise inherit the statistics methods.
-  DescriptiveStatistics::AllMethods.instance_methods.each do |m|
+  DescriptiveStatistics.instance_methods.each do |m|
     define_method(m, DescriptiveStatistics::AllMethods.instance_method(m))
   end
 end

@@ -6,6 +6,10 @@ describe DescriptiveStatistics::CentralTendency do
       DescriptiveStatistics::Stats.new([1,2,6]).sum.should == 9
     end
 
+    it 'allows a block to be passed' do
+      DescriptiveStatistics::Stats.new([1,2,6]).sum{ |x| x * 2 }.should == 18
+    end
+
     it 'returns 0 if empty' do
       DescriptiveStatistics::Stats.new([]).sum.should == 0
     end
@@ -42,6 +46,10 @@ describe DescriptiveStatistics::CentralTendency do
 
     it 'returns nil if there is no most frequent value' do
       DescriptiveStatistics::Stats.new([1,2,3]).mode.should be_nil
+    end
+
+    it 'returns the first value if there is only one' do
+      DescriptiveStatistics::Stats.new([3.5]).mode.should == 3.5
     end
 
     it 'returns nil if empty' do

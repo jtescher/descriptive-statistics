@@ -17,6 +17,11 @@ module DescriptiveStatistics
       Math.sqrt(variance)
     end
 
+    def relative_standard_deviation
+      return if length < 1
+      (population_standard_deviation / mean) * 100.0
+    end
+
     def population_standard_deviation
       return if length < 2
       Math.sqrt(population_variance)

@@ -31,6 +31,21 @@ describe DescriptiveStatistics::Spread do
     end
   end
 
+  describe '#relative_standard_deviation' do
+    it 'returns 0 for constant values' do
+      DescriptiveStatistics::Stats.new([100, 100, 100]).relative_standard_deviation.should == 0
+    end
+
+    it 'returns the population_standard_deviation divided by the mean * 100' do
+      DescriptiveStatistics::Stats.new([90, 100, 110]).relative_standard_deviation.should be_within(0.01).of(8.16)
+      DescriptiveStatistics::Stats.new([1, 5, 6, 8, 10, 40, 65, 88]).relative_standard_deviation.should be_within(0.01).of(110.41)
+    end
+
+    it 'returns nil if empty' do
+      DescriptiveStatistics::Stats.new([]).relative_standard_deviation.should be_nil
+    end
+  end
+
   describe '#population_standard_deviation' do
     it 'returns the square root of the population_variance' do
       DescriptiveStatistics::Stats.new([1,2,6]).population_standard_deviation.should == 2.160246899469287

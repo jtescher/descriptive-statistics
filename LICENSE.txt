@@ -1,4 +1,4 @@
-Copyright (c) 2012 Julian Tescher
+Copyright (c) 2013 Julian Tescher
 
 MIT License
 

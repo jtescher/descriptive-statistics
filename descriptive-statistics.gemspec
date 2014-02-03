@@ -21,10 +21,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency "rspec", "~> 2.14.1"
-  gem.add_development_dependency "rake", "~> 10.1.0"
+  gem.add_development_dependency "rspec", "~> 2.14"
+  gem.add_development_dependency "rake", "~> 10.1"
   if RUBY_VERSION > "1.9"
-    gem.add_development_dependency "simplecov", "~> 0.7.1"
-    gem.add_development_dependency "coveralls", "~> 0.6.8"
+    gem.add_development_dependency "simplecov", "~> 0.7"
+    gem.add_development_dependency "coveralls", "~> 0.6"
   end
 end

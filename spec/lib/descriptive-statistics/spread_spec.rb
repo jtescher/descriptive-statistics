@@ -26,6 +26,10 @@ describe DescriptiveStatistics::Spread do
       DescriptiveStatistics::Stats.new([1,2,6]).standard_deviation.should == 2.6457513110645907
     end
 
+    it 'returns nil for single element arrays' do
+      DescriptiveStatistics::Stats.new([1]).standard_deviation.should be_nil
+    end
+
     it 'returns nil if empty' do
       DescriptiveStatistics::Stats.new([]).standard_deviation.should be_nil
     end
@@ -49,6 +53,10 @@ describe DescriptiveStatistics::Spread do
   describe '#population_standard_deviation' do
     it 'returns the square root of the population_variance' do
       DescriptiveStatistics::Stats.new([1,2,6]).population_standard_deviation.should == 2.160246899469287
+    end
+
+    it 'returns 0 for single element arrays' do
+      DescriptiveStatistics::Stats.new([1]).population_standard_deviation.should == 0
     end
 
     it 'returns nil if empty' do

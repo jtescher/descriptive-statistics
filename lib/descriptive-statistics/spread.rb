@@ -23,7 +23,7 @@ module DescriptiveStatistics
     end
 
     def population_standard_deviation
-      return if length < 2
+      return if length < 1
       Math.sqrt(population_variance)
     end
   end

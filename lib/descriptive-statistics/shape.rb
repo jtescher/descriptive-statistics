@@ -16,7 +16,8 @@ module DescriptiveStatistics
   private
 
     def sum_cubed_deviation
-      inject(0) {|sum, value| sum + (value - mean) ** 3}
+      precalculated_mean = mean
+      inject(0) {|sum, value| sum + (value - precalculated_mean) ** 3}
     end
 
     def cubed_standard_deviation
@@ -24,7 +25,8 @@ module DescriptiveStatistics
     end
 
     def sum_quarted_deviation
-      inject(0) {|sum, value| sum + (value - mean) ** 4}
+      precalculated_mean = mean
+      inject(0) {|sum, value| sum + (value - precalculated_mean) ** 4}
     end
 
     def quarted_standard_deviation

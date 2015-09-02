@@ -54,6 +54,7 @@ stats.value_from_percentile(60) #=> 3
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.variance #=> 14.299999999999999
+stats.population_variance  #=> 11.44
 stats.standard_deviation #=> 3.7815340802378072
 stats.relative_standard_deviation #=> 99.47961485463391
 ```

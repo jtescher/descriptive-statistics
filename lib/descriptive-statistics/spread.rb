@@ -29,5 +29,12 @@ module DescriptiveStatistics
       return if length < 1
       Math.sqrt(population_variance)
     end
+
+    def zscore
+      return if length < 2
+      stdev = standard_deviation
+      m = mean
+      stdev.zero? ? Array.new(self.length, 0) : self.collect { |v| (v - m) / stdev }
+    end
   end
 end

@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rspec", "~> 2.14"
   gem.add_development_dependency "rake", "~> 10.1"
   if RUBY_VERSION > "1.9"
-    gem.add_development_dependency "simplecov", "~> 0.7"
-    gem.add_development_dependency "coveralls", "~> 0.6"
+    gem.add_development_dependency "simplecov", "~> 0.14"
+    gem.add_development_dependency "coveralls", "~> 0.8"
   end
 end

@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
                          mode), dispersion (e.g. range and quartiles), and spread (e.g variance and standard deviation)}
   gem.homepage      = "https://github.com/jtescher/descriptive-statistics"
   gem.signing_key   = File.expand_path('~/.ssh/gem-private_key.pem') if $0 =~ /gem\z/
-  gem.cert_chain    = ['gem-public_cert.pem']
+  gem.cert_chain    = ['certs/jtescher.pem']
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)

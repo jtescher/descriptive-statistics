@@ -63,4 +63,18 @@ describe DescriptiveStatistics::Spread do
       DescriptiveStatistics::Stats.new([]).population_standard_deviation.should be_nil
     end
   end
+
+  describe '#zscore' do
+    it 'returns the zscore for the sample' do
+      DescriptiveStatistics::Stats.new([1, 2, 3]).zscore.should == [-1.0, 0.0, 1.0]
+    end
+
+    it 'returns nil for single element arrays' do
+      DescriptiveStatistics::Stats.new([1]).zscore.should be_nil
+    end
+
+    it 'returns nil if empty' do
+      DescriptiveStatistics::Stats.new([]).zscore.should be_nil
+    end
+  end
 end

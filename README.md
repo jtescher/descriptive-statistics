@@ -6,16 +6,12 @@ This gem calculates descriptive statistics including measures of central tendenc
 Tested against ruby 1.8.7, 1.9.2, 1.9.3, 2.0.0, 2.1.0, ruby-head, jruby-18mode, jruby-19mode, jruby-head, rbx-2.1.1,
 rbx-2.2.0, rbx-2.2.1 and ree
 
-[![Build Status](https://secure.travis-ci.org/jtescher/descriptive-statistics.png)]
-(http://travis-ci.org/jtescher/descriptive-statistics)
-[![Dependency Status](https://gemnasium.com/jtescher/descriptive-statistics.png)]
-(https://gemnasium.com/jtescher/descriptive-statistics)
-[![Code Climate](https://codeclimate.com/github/jtescher/descriptive-statistics.png)]
-(https://codeclimate.com/github/jtescher/descriptive-statistics)
-[![Gem Version](https://badge.fury.io/rb/descriptive-statistics.png)]
-(http://badge.fury.io/rb/descriptive-statistics)
-[![Coverage Status](https://coveralls.io/repos/jtescher/descriptive-statistics/badge.png)]
-(https://coveralls.io/r/jtescher/descriptive-statistics)
+[![Build Status](https://secure.travis-ci.org/jtescher/descriptive-statistics.png)](http://travis-ci.org/jtescher/descriptive-statistics)
+[![Dependency Status](https://gemnasium.com/jtescher/descriptive-statistics.png)](https://gemnasium.com/jtescher/descriptive-statistics)
+[![Code Climate](https://codeclimate.com/github/jtescher/descriptive-statistics.png)](https://codeclimate.com/github/jtescher/descriptive-statistics)
+[![Gem Version](https://badge.fury.io/rb/descriptive-statistics.png)](http://badge.fury.io/rb/descriptive-statistics)
+[![Coverage Status](https://coveralls.io/repos/jtescher/descriptive-statistics/badge.png)](https://coveralls.io/r/jtescher/descriptive-statistics)
+
 ## Installation
 
 Add this line to your application's Gemfile:
